@@ -1,0 +1,17 @@
+name: Code Quality Check
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Add steps to run code quality checks here, 
+      # such as SonarQube analysis or other tools
